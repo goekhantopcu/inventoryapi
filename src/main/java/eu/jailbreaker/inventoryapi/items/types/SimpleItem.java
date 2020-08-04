@@ -16,8 +16,7 @@ public class SimpleItem {
     private ItemStack cover;
 
     public SimpleItem(SlotPos slotPos, ItemStack cover) {
-        this.slot = slotPos.toSlot();
-        this.cover = cover;
+        this(slotPos.toSlot(), cover);
     }
 
     public void add(Inventory inventory) {
